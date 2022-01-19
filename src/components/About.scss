@@ -1,0 +1,63 @@
+@import "./../styles/variables.scss";
+
+
+.about{
+    
+    height: 100%;
+    &_content{
+        margin-top: 1.2rem;
+        width: 90%;
+        margin-left: 1.2rem;
+        @include breakpoint(md){
+            margin: auto;
+            width: 50%;
+            margin-top: 2rem;
+        }
+       
+        h1{
+            margin-top: 1.2rem;
+            font-style: italic;
+            
+        }
+        p{
+            font-size: 1.2rem;
+            
+            text-align: left;
+        }
+    }
+    &_form{
+
+        @include breakpoint(md){
+            margin-top: 5rem;
+        }
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        color: #000;
+        h1{
+            margin-top: 1.2rem;
+            font-style: italic;
+            
+        }
+        input,select,textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+    }
+   
+}

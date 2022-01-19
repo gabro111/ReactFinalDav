@@ -1,0 +1,32 @@
+@import "./../styles/variables.scss";
+
+.projects {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    
+
+    .project_thumbnail {
+        @include breakpoint(md){
+            flex-basis: 21%
+        }
+       
+    }
+}
+.load_more{
+    margin-left: 42%;
+    margin-bottom: 20px;
+    background-color: #8b2463;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    @include breakpoint(md){
+        margin-left: 50%;
+    }
+}
